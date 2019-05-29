@@ -1,0 +1,17 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="WixPageFormsBasicTestSuite" verbose="1">
+
+	<test name="WixFormTestsBasic">
+		<!-- <parameter name="chromeProfile" value="ChromeProfile"></parameter> -->
+		<classes>
+			<class name="il.co.wixmeup.CheckFormTestBasic">
+				<methods>
+					<include name="BasicTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-05-29T16:15:41Z" name="Default suite" finished-at="2019-05-29T16:15:54Z" duration-ms="12720">
+    <groups>
+    </groups>
+    <test started-at="2019-05-29T16:15:41Z" name="Default test" finished-at="2019-05-29T16:15:54Z" duration-ms="12720">
+      <class name="il.co.wixmeup.CheckFormTestAdvance">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:il.co.wixmeup.CheckFormTestAdvance@52aa2946]" started-at="2019-05-29T16:15:41Z" name="setup" finished-at="2019-05-29T16:15:48Z" duration-ms="6709" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void il.co.wixmeup.CheckFormTestAdvance.BasicTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[org.testng.TestRunner@62a8fd44]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="BasicTest()[pri:0, instance:il.co.wixmeup.CheckFormTestAdvance@52aa2946]" started-at="2019-05-29T16:15:48Z" name="BasicTest" finished-at="2019-05-29T16:15:53Z" duration-ms="5878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BasicTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:il.co.wixmeup.CheckFormTestAdvance@52aa2946]" started-at="2019-05-29T16:15:53Z" name="tearDown" finished-at="2019-05-29T16:15:54Z" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- il.co.wixmeup.CheckFormTestAdvance -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
