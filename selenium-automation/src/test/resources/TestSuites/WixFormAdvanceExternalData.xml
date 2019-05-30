@@ -1,0 +1,15 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="WixPageFormsAdvanceTestSuite" verbose="1">
+
+	<test name="WixFormTestsAdvance">
+		<!-- <parameter name="chromeProfile" value="ChromeProfile"></parameter> -->
+		<classes>
+			<class name="il.co.wixmeup.CheckFormTestWithExtrnalData">
+			</class>
+		</classes>
+	</test>
+
+
+</suite>

@@ -1,4 +1,4 @@
-package co.il.pages;
+package il.co.pages;
 
 
 import org.apache.logging.log4j.Logger;

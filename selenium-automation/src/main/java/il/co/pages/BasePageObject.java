@@ -1,4 +1,4 @@
-package co.il.pages;
+package il.co.pages;
 
 
 import java.util.List;

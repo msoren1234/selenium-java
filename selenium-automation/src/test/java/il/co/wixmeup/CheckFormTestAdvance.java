@@ -1,8 +1,9 @@
 package il.co.wixmeup;
 
 import org.testng.annotations.Test;
-import co.il.base.TestUtilities;
-import co.il.pages.WixFormPage;
+
+import il.co.base.TestUtilities;
+import il.co.pages.WixFormPage;
 
 
 
@@ -38,7 +39,7 @@ public class CheckFormTestAdvance extends TestUtilities {
 					.pushCalcButton();
 
 
-		sleep(1000);
+		Sleep(1000);
 		// Verifications
 		wixFormPage.waitForRestuls()
 					.VerifyTextElement("4", wixFormPage.restuls());
@@ -46,14 +47,6 @@ public class CheckFormTestAdvance extends TestUtilities {
 		
 	}
 	
-	private void sleep(int number) {
-		//sleep for 2 seconds
-		try {
-			Thread.sleep(number);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}}
 	
 
 }
