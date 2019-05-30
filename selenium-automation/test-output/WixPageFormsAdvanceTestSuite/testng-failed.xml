@@ -3,13 +3,13 @@
 <suite name="Failed suite [WixPageFormsAdvanceTestSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="WixFormTestsAdvance(failed)">
     <classes>
-      <class name="il.co.wixmeup.CheckFormTestAdvance">
+      <class name="il.co.wixmeup.CheckFormTestWithExtrnalData">
         <methods>
+          <include name="CheckFormTestWithExtrnalData" invocation-numbers="3"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="BasicTest"/>
         </methods>
-      </class> <!-- il.co.wixmeup.CheckFormTestAdvance -->
+      </class> <!-- il.co.wixmeup.CheckFormTestWithExtrnalData -->
     </classes>
   </test> <!-- WixFormTestsAdvance(failed) -->
 </suite> <!-- Failed suite [WixPageFormsAdvanceTestSuite] -->

@@ -25,7 +25,7 @@ public class CheckFormTestWithExtrnalData extends TestUtilities {
 	@Test(dataProvider = "csvReader", dataProviderClass = CsvDataProviders.class)
 	public void CheckFormTestWithExtrnalData(Map<String,String> testData) {
 
-		log.info("Starting BasicTest");
+		log.info("Starting CheckFormTestWithExtrnalData()");
 		
 		
 		//Extract Data from External file
@@ -36,7 +36,7 @@ public class CheckFormTestWithExtrnalData extends TestUtilities {
 		String result = testData.get("result");
 		String action = testData.get("action");
 				
-		log.info("Starting BasicTest() #" + no +"| Parameters: Num1:" + num1 + " Num2:" + num2 + " action:" + action);
+		log.info("Starting CheckFormTestWithExtrnalData() #" + no +"| Parameters: Num1:" + num1 + " Num2:" + num2 + " action:" + action);
 				
 		
 		WixFormPage wixFormPage = new WixFormPage(driver, log);
@@ -44,9 +44,8 @@ public class CheckFormTestWithExtrnalData extends TestUtilities {
 		// open main page
 		wixFormPage.openPage();
 		
-		log.info("Check MINUS action");
 		
-		//Check MINUS action
+		//Check calculator action
 		wixFormPage.typeNumber1(num1)
 					.typeNumber2(num2)
 					.dropDownAction(action)
@@ -54,12 +53,11 @@ public class CheckFormTestWithExtrnalData extends TestUtilities {
 
 
 		Sleep(1000);
+		
 		// Verifications
 		wixFormPage.waitForRestuls()
 					.VerifyTextElement(result, wixFormPage.restuls());
 	
-		
 	}
-	
 
 }
