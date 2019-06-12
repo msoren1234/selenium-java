@@ -8,49 +8,12 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">WixPageFormsAdvanceTestSuite</th></tr>
-<tr><td><a href="#t0">WixFormTestsAdvance</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">1</td><td class="num">42,325</td><td></td><td></td></tr>
+<tr><th colspan="7">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">21,841</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">WixPageFormsAdvanceTestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">WixFormTestsAdvance &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">il.co.wixmeup.CheckFormTestWithExtrnalData</td><td><a href="#m0">CheckFormTestWithExtrnalData</a></td><td rowspan="1">1559218052722</td><td rowspan="1">10021</td></tr><tr><th colspan="4">WixFormTestsAdvance &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">il.co.wixmeup.CheckFormTestWithExtrnalData</td><td><a href="#m1">CheckFormTestWithExtrnalData</a></td><td rowspan="3">1559218036168</td><td rowspan="3">6762</td></tr><tr class="passedeven"><td><a href="#m2">CheckFormTestWithExtrnalData</a></td></tr><tr class="passedeven"><td><a href="#m3">CheckFormTestWithExtrnalData</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">il.co.wixmeup.CheckFormTestAdvance</td><td><a href="#m0">BasicTest</a></td><td rowspan="1">1560360803985</td><td rowspan="1">6497</td></tr><tr class="passedeven"><td><a href="#m1">BasicTest2</a></td><td rowspan="1">1560360811723</td><td rowspan="1">6875</td></tr></tbody>
 </table>
-<h2>WixFormTestsAdvance</h2><h3 id="m0">il.co.wixmeup.CheckFormTestWithExtrnalData#CheckFormTestWithExtrnalData</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{result=3, num1=12, no=4, action=DIVIDE, num2=4}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;comp-jv2bkkx0input&apos;] (tried for 5 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at il.co.pages.BasePageObject.waitFor(BasePageObject.java:77)
-	at il.co.pages.BasePageObject.waitForVisibilityOf(BasePageObject.java:88)
-	at il.co.pages.BasePageObject.type(BasePageObject.java:53)
-	at il.co.pages.WixFormPage.typeNumber1(WixFormPage.java:44)
-	at il.co.wixmeup.CheckFormTestWithExtrnalData.CheckFormTestWithExtrnalData(CheckFormTestWithExtrnalData.java:50)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;comp-jv2bkkx0input&apos;]&quot;}
-  (Session info: chrome=74.0.3729.169)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Mac OS X 10.14.5 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Orens-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:104b:5678:2cfc:cb15%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;12.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: /var/folders/15/yl3v160x0fn...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51646}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
-Session ID: e4d5652ac8e4db07ba1a6ce8b585b614
-*** Element info: {Using=xpath, value=//input[@id=&apos;comp-jv2bkkx0input&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 30 more
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">il.co.wixmeup.CheckFormTestWithExtrnalData#CheckFormTestWithExtrnalData</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{result=30, num1=5, no=2, action=MULTIPLY, num2=6}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">il.co.wixmeup.CheckFormTestWithExtrnalData#CheckFormTestWithExtrnalData</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{result=-1, num1=3, no=1, action=MINUS, num2=4}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">il.co.wixmeup.CheckFormTestWithExtrnalData#CheckFormTestWithExtrnalData</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{result=14, num1=7, no=3, action=PLUS, num2=7}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">il.co.wixmeup.CheckFormTestAdvance#BasicTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">il.co.wixmeup.CheckFormTestAdvance#BasicTest2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -18,6 +18,7 @@ public class WixFormPage extends BasePageObject {
 	private By number2_Test1 = By.xpath("//input[@id='comp-jv2bldt0input']");
 	private By reuslt_Test1 = By.xpath("/html[1]/body[1]/div[1]/div[1]/div[4]/div[1]/main[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/section[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[8]/p[1]/span[1]/span[1]/span[1]");
 	
+	
 	private By dropDown_Test1 = By.xpath("//select[@id='comp-jvf52vybcollection']");
 	
 	

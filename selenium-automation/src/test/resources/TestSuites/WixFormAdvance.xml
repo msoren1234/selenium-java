@@ -7,9 +7,9 @@
 		<!-- <parameter name="chromeProfile" value="ChromeProfile"></parameter> -->
 		<classes>
 			<class name="il.co.wixmeup.CheckFormTestAdvance">
-				<methods>
+<!-- 				<methods>
 					<include name="BasicTest"></include>
-				</methods>
+				</methods> -->
 			</class>
 		</classes>
 	</test>

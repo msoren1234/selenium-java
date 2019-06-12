@@ -44,12 +44,14 @@ public class BasePageObject {
 
 	/** Click on element with given locator when its visible */
 	protected void click(By locator) {
+		log.info("Click on button with locator: " + locator);
 		waitForVisibilityOf(locator, 5);
 		find(locator).click();
 	}
 
 	/** Type given text into element with given locator */
 	protected void type(String text, By locator) {
+		log.info("Type " + text + " in Textbox with locator: " + locator);
 		waitForVisibilityOf(locator, 5);
 		find(locator).sendKeys(text);
 	}
@@ -62,7 +64,7 @@ public class BasePageObject {
 	
 	/** Type given text into element with given locator */
 	protected void select(String text, By locator) {
-		//waitForVisibilityOf(locator);
+		log.info("Select " + text + " in Combo with locator: " + locator);
 		Select dropdownObject = new Select(find(locator));
 		dropdownObject.selectByVisibleText(text);
 	}

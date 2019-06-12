@@ -6,23 +6,28 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import com.aventstack.extentreports.ExtentTest;
+
 
 public class BrowserDriverFactory {
 	
 	private ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 	private String browser;
 	private Logger log;
+	private ExtentTest logHtml;
 	
-	public BrowserDriverFactory(String browser, Logger log) {
+	public BrowserDriverFactory(String browser, Logger log, ExtentTest logHtml) {
 		//this.browser = browser.toLowerCase();
 		this.browser = browser;
 		this.log = log;
+		this.logHtml = logHtml;
 	}
 	
 	// Set up a Chrome driver
 	public WebDriver createDriver() {
 		
 		log.info("Check which browser to open");
+		logHtml.info("Check which browser to open");
 			
 //		switch (browser) {
 //			case "chrome":
@@ -46,9 +51,12 @@ public class BrowserDriverFactory {
 		return driver.get();
 	}
 	
+
+	
 	public WebDriver createChromeWithProfile(String profile) {
 		
 		log.info("Starting chrome driver with profile: " + profile);
+		logHtml.info("Check which browser to open");
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.addArguments("user-data-dir=src/main/resources/Profiles/" + profile);
 		

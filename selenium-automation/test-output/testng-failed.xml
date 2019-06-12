@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [WixPageFormsAdvanceTestSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="WixFormTestsAdvance(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="il.co.wixmeup.CheckFormTestWithExtrnalData">
+      <class name="il.co.wixmeup.CheckFormTestAdvance">
         <methods>
-          <include name="CheckFormTestWithExtrnalData" invocation-numbers="3"/>
           <include name="setup"/>
+          <include name="setup_BeforeClass"/>
           <include name="tearDown"/>
+          <include name="BasicTest2"/>
+          <include name="tearDown2"/>
+          <include name="BasicTest"/>
         </methods>
-      </class> <!-- il.co.wixmeup.CheckFormTestWithExtrnalData -->
+      </class> <!-- il.co.wixmeup.CheckFormTestAdvance -->
     </classes>
-  </test> <!-- WixFormTestsAdvance(failed) -->
-</suite> <!-- Failed suite [WixPageFormsAdvanceTestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

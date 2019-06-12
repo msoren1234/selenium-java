@@ -1,5 +1,7 @@
 package il.co.wixmeup;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,7 +24,8 @@ public class CheckFormTestBasic {
 
 	
 	@Test
-	public void BasicTest() {
+	public void BasicTest(){
+		
 		
 		System.out.println("Starting BasicTest() function");
 		
